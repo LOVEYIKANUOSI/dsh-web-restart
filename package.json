@@ -2,7 +2,7 @@
   "name": "dsh-web-restart",
   "version": "0.1.0",
   "private": true,
-  "description": "DeepSeek Harness plugin bundle: a Restart Web control in the General settings panel",
+  "description": "DSH Web 重启插件：在通用设置里一键重启 Web 服务",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
