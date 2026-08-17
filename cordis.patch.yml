@@ -1,0 +1,10 @@
+# dsh-web-restart — 设置面板里的「重启 Web」按钮（bundle patch 层）
+#
+# Host 半注册两个 HTTP 路由（重启 + 健康检查），并在请求时启动一个
+# detached 看护进程：先请求 dsh 优雅退出，超时则强杀，然后用完全相同的
+# node 可执行文件 / 参数 / 工作目录重新拉起 web 进程。
+# Client 半在 General 设置区注册一行「重启 Web」。
+
+- insert:
+    - id: web-restart
+      name: dsh-web-restart
